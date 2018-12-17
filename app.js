@@ -5,7 +5,7 @@ $(document).ready(function(){
   $('.btn-submit').on('click', function(){
     localStorage.setItem($('.text-entry').val(), $('.text-entry').val());
     var myItemInStorage = localStorage.getItem($('.text-entry').val());
-    console.log('myItemInStorage', myItemInStorage);
+    
 
     // display the value here
     $('.list-display-field').text(myItemInStorage); // ??
@@ -15,6 +15,9 @@ $(document).ready(function(){
   // delete from local storage when delete button clicked
   $('.btn-delete').on('click', function(){
     localStorage.removeItem('inputFieldValue');
+  });
+  $('.btn-delete-all').on('click', function(){
+    localStorage.clear();
   });
 
 });
