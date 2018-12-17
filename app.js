@@ -3,12 +3,14 @@ $(document).ready(function(){
 
   // write to local storage from input when button save clicked
   $('.btn-submit').on('click', function(){
+    var pokemon = $('.text-entry').val()
+    if (localStorage.hasOwnProperty(pokemon)) {
+     $('.list-display-field').text('You already caught ' + pokemon);
+   } else {
     localStorage.setItem($('.text-entry').val(), $('.text-entry').val());
     var myItemInStorage = localStorage.getItem($('.text-entry').val());
-    
-
-    // display the value here
-    $('.list-display-field').text(myItemInStorage); // ??
+    $('.list-display-field').text('You caught ' + pokemon);
+    }
 
   });
 
