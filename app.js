@@ -24,7 +24,7 @@ $(document).ready(function(){
   $('.btn-display-all').click(function(){
     $('.list-display-field').html('');
     var caughtPokemon = Object.keys(localStorage)
-    $('.list-display-field').text('Your Pokémon ' + caughtPokemon);
+    $('.list-display-field').text('Your Pokémon: ' + caughtPokemon);
     
   })
    

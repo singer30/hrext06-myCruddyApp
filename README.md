@@ -22,7 +22,8 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Next Sprint (what are we trying to code)
 Examples: Replace with your own.
-- [ ] center the page 
+- [x] center the page 
+- [x] add a title. 
 - [x] allow pokedex to check if you have already caught a pokemon
 - [ ] add the Kanto pokemon 
 - [x] add a catch and release theme to the buttons
@@ -30,6 +31,7 @@ Examples: Replace with your own.
 - [ ] color code the names by time
 - [ ] add the pokemon theme song
 - [ ] add their immages 
-- [ ] add button that allows the user to view all his caught pokemon 
+- [x] add button that allows the user to view all his caught pokemon 
+  - [ ] improve the spacing between the shown pokemon 
 
 - [ ] Optional: Host on repl.it (html,css, js)
