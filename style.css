@@ -27,6 +27,31 @@ body {
 	height: 30px;
 	margin-top: 20px;
 }
+.species-info{
+	display: flex;
+	justify-content: center;
+}
+ol {
+  counter-reset: items;
+}
+
+li {
+  display: block;
+  counter-increment: items;
+}
+
+li:before {
+  content: "#00" counter(items)". ";
+}
+
+li:nth-child(n+10):before {
+  content: "#0" counter(items)". ";
+}
+
+li:nth-child(n+100):before {
+  content: "#" counter(items)". ";
+}
+
 /*
 .circle-one {
 	background-color: #23ffff;
